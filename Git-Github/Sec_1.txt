@@ -1,0 +1,24 @@
+1. mkdir Assignments
+2. cd Assignments
+3. touch readme.md
+4. git add readme.md
+5. git commit -m “readme.md”
+6. git branch html-assignments
+7. git checkout html-assignments
+8. // “copying and pasting html files in the folder”
+9. git add .
+10. git commit -m “committing all html”
+11. // “Edit html files”
+12. git add .
+13. git commit -m “edited few html files”
+14. git checkout master
+15. // “Edit readme.md file”
+16. git add readme.md
+17. git commit -m “edited readme.md”
+18. git checkout html-assignments
+19. // “Make changes to html files”
+20. git add .
+21. git commit -m “changes to html files”
+22. git checkout master
+23. git merge html-assignments
+24. git branch -d htm-assignments

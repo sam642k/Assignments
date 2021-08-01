@@ -1,0 +1,22 @@
+1. git branch css-assignments
+2. git checkout css-assignments
+3. // “Copy and past css file in the folder”
+4. git add .
+5. git commit -m “commitng the css file”
+6. // “edited line 1 on readme.md” 
+7. git add .
+8. git commit -m “committing the edit”
+9. git checkout master
+10. // “Editing line 3 on readme.md”
+11. git add .
+12. git commit -m “changes in master branch”
+13. git checkout css-assignments
+14. // ”Editing css files”
+15. git add .
+16. git commit -m “edited csss files”
+17. git checkout master
+18. git merge css-assignments
+19. // “ Resolve merge conflicts by editing the readme.md file”
+20. git add .
+21. git commit -m “resolved merge conflicts”
+22. git branch -d css-assignments

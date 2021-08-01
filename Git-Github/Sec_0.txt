@@ -1,0 +1,26 @@
+1. mkdir project_dir
+2. cd project_dir
+3. git init
+4. ouch index.html
+5. git status
+6. git add index.html
+7. git commit -m “first commit of index.html”
+8. // “Editing the index.html file”
+9. touch info.txt
+10. git status
+11. touch .gitignore
+12. // “Open .gitignore file, enter info.txt and exit”
+13. git status
+14. git add index.html
+15. git commit -m “Edited index.html”
+16. // “Edited index.html and made changes”
+17. git checkout – index.html
+18. // “Edited index.html and made changes”
+19. git add index.html
+20. git restore –staged index.html
+21. git config –global alias.my_add add
+22. git my_add index.html
+23. git commit -m “Staged using my_add command”
+24. git log 
+25. // “Copy the commit hash of the last commit”
+26. git revert <commit hash>

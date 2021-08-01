@@ -1,0 +1,29 @@
+1. git branch js-assignments
+2. git checkout js-assignments
+3. // “copy all javascript files”
+4. git add .
+5. git commit -m “committing js files”
+6. //”edit line 1 on readme.md file”
+7. git add readme.md
+8. git commit -m “edited line 1 on readme”
+9. git checkout master
+10. //” Edit line 1 on readme.md file”
+11. git add readme.md
+12. git commit -m “edited line 1 of readme on master”
+13. git checkout js-assignments
+14. // “Edited few js files”
+15. git add .
+16. git commit -m “Changes to js files”
+17. git checkout master
+18. git merge js-assignments
+19. // “Edit readme.md file to resolve conflicts”
+20. git add .
+21. git commit -m “resolved conflicts”
+22. git branch -d js-assignments
+
+
+
+Git Remoting
+
+1. git remote add origin https://github.com/sam642k/Assignments.git
+2. git push -u origin master
