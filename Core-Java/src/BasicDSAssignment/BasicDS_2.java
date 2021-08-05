@@ -1,3 +1,4 @@
+package BasicDSAssignment;
 public class BasicDS_2 {
 	boolean isAmstrong(int n) {
 		int r, s=0, x=n;
