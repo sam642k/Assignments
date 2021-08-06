@@ -1,4 +1,4 @@
-package basic.DS.Assignment;
+package BasicDSAssignment;
 import java.util.*;
 public class BasicDS_6 {
 

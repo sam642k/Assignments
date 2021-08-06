@@ -1,4 +1,4 @@
-package oop.Assignment;
+package IntermediateOOPAssignment;
 
 abstract class Persistence{
 	abstract void persist();

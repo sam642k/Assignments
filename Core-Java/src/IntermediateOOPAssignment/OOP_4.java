@@ -1,4 +1,4 @@
-package oop.Assignment;
+package IntermediateOOPAssignment;
 
 class Test1{
 	abstract void method();//Error: class must be declared abstract if method is abstract
