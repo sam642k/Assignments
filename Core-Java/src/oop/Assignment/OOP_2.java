@@ -1,4 +1,4 @@
-package IntermediateOOPAssignment;
+package oop.Assignment;
 
 abstract class Employee{
 	int salary=10000;

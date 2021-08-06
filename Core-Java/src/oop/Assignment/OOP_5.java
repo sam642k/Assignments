@@ -1,4 +1,4 @@
-package IntermediateOOPAssignment;
+package oop.Assignment;
 
 abstract class Shape{
 	abstract void draw();

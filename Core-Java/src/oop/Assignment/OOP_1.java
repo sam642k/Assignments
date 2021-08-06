@@ -1,4 +1,4 @@
-package IntermediateOOPAssignment;
+package oop.Assignment;
 
 class Singleton{
 	private static Singleton inst= null;

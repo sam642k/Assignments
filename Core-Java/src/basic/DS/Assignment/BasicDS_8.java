@@ -1,4 +1,4 @@
-package BasicDSAssignment;
+package basic.DS.Assignment;
 
 public class BasicDS_8 {
 

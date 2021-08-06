@@ -1,4 +1,4 @@
-package IntermediateOOPAssignment;
+package oop.Assignment;
 import java.util.*;
 
 abstract class DesertItem{

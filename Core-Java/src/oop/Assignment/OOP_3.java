@@ -1,4 +1,4 @@
-package IntermediateOOPAssignment;
+package oop.Assignment;
 
 abstract class Bank{
 	abstract int getBalance();
