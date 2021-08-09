@@ -28,7 +28,7 @@ class Employee{
 public class Generics_1 {
 
 	public static void main(String[] args) {
-		HashSet<Employee> set= new HashSet<>();
+		Set<Employee> set= new HashSet<>();
 		set.add(new Employee(1,"Tony", 6000000,"AI"));
 		set.add(new Employee(1,"Steve", 2000000,"Military"));
 		set.add(new Employee(1,"Thor", 3600000,"God"));
