@@ -16,6 +16,10 @@ import java.lang.reflect.*;
 
 @Info(authorId=1, date="11-08-2021", time="12:05", version=1)
 public class Annotations_2 {
+	
+	@Info(authorId=1, date="11-08-2021", time="12:05", version=1, author="Samee")
+	void method() {}
+	
 	public static void main(String[] args) {
 		
 	}
