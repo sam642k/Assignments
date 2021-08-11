@@ -111,7 +111,12 @@ public class Collections_3 {
 		set.add(new Employee(54, "Steve", "Military", 4500000));
 		set.add(new Employee(26, "Thor", "GOD", 10000000));
 		set.add(new Employee(36, "Natasha", "Spy", 3800000));
-		set.add(new Employee(46, "Bruce", "Military", 4500000));
+		set.add(new Employee(46, "Bruce", "Weapons", 4500000));
+		set.add(new Employee(32, "Clint", "Spy", 6500000));
+		set.add(new Employee(81, "Bucky", "Military", 7800000));
+		set.add(new Employee(16, "Sam", "Military", 2150000));
+		set.add(new Employee(46, "Peter", "Assualt", 3540000));
+		set.add(new Employee(46, "Wanda", "Assault", 6800000));
 		
 		for(Employee e: set)
 			System.out.println(e);
