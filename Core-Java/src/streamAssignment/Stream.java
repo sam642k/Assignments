@@ -37,9 +37,6 @@ public class Stream {
 		
 		System.out.println("5");
 		news.stream().forEach(n -> {
-			int count=0;
-			if(n.getComment().contains("budget"))
-				count++;
 		});
 	}
 }

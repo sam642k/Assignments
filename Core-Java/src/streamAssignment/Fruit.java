@@ -34,6 +34,4 @@ public class Fruit {
 	public String toString() {
 		return "Fruit [name=" + name + ", calories=" + calories + ", price=" + price + ", color=" + color + "]";
 	}
-	
-	
 }

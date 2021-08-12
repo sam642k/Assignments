@@ -30,5 +30,4 @@ public class News {
 				+ ", Comment=" + Comment + "]";
 	}
 	
-	
 }
