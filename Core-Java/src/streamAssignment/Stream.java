@@ -34,6 +34,8 @@ public class Stream {
 				new Transaction(traders.get(0), 2011, 5000)
 				);
 		
+		
+		
 		System.out.println("\n1");
 		fruits.stream().filter(fruit -> fruit.getCalories()<100)
 		.sorted((f1, f2) -> f2.getCalories()-f1.getCalories()).forEach(System.out::println);
