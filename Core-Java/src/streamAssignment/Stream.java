@@ -102,6 +102,5 @@ public class Stream {
 		System.out.println("\n15");
 		System.out.println(transactions.stream().sorted((t1, t2) -> t1.getValue()-t2.getValue()).findFirst().get());
 		
-		
 	}
 }
