@@ -23,16 +23,22 @@ public class Stream {
 				);
 		
 		List<Trader> traders= Arrays.asList(
-				new Trader("Tony", "New york"),
-				new Trader("Thor", "Asgard")
+				new Trader("Tony", "Delhi"),
+				new Trader("Thor", "Pune"),
+				new Trader("Steve", "Pune"),
+				new Trader("Bruce", "Delhi")
 				);
 		
 		List<Transaction> transactions= Arrays.asList(
 				new Transaction(traders.get(0), 2011, 5000),
-				new Transaction(traders.get(0), 2011, 5000),
-				new Transaction(traders.get(0), 2011, 5000),
-				new Transaction(traders.get(0), 2011, 5000)
+				new Transaction(traders.get(1), 2012, 4000),
+				new Transaction(traders.get(3), 2011, 6000),
+				new Transaction(traders.get(2), 2010, 5000),
+				new Transaction(traders.get(3), 2011, 8000),
+				new Transaction(traders.get(0), 2010, 9000),
+				new Transaction(traders.get(0), 2012, 2000)
 				);
+		
 		
 		
 		
@@ -67,6 +73,34 @@ public class Stream {
 				.entrySet().stream().forEach(e -> System.out.println("User: "+e.getKey()+ "    No of Comments: "+e.getValue()));
 		
 		System.out.println("\n8");
+		transactions.stream().filter(t -> t.getYear()==2011)
+		.sorted((t1, t2) -> t1.getYear()-t2.getYear()).forEach(System.out::println);
+		
+		System.out.println("\n9");
+		traders.stream().map(Trader::getCity).distinct().forEach(System.out::println);
+		
+		System.out.println("\n10");
+		traders.stream().filter(t -> t.getCity().compareTo("Pune")==0)
+		.sorted((t1, t2) -> t1.getName().compareTo(t2.getName())).forEach(System.out::println);;
+		
+		System.out.println("\n11");
+		traders.stream().map(Trader::getName).sorted().forEach(System.out::println);
+		
+		System.out.println("\n12");
+		if(traders.stream().anyMatch(t-> t.getCity().compareTo("Indore")==0)==false)
+			System.out.println("No");
+		else
+			traders.stream().filter(t-> t.getCity().compareTo("Indore")==0).forEach(System.out::println);
+		
+		System.out.println("\n13");
+		transactions.stream().filter(t -> t.getTrader().getCity().compareTo("Delhi")==0)
+		.forEach(t -> System.out.println(t.getValue()));;
+		
+		System.out.println("\n14");
+		System.out.println(transactions.stream().sorted((t1, t2) -> t2.getValue()-t1.getValue()).findFirst().get().getValue());
+		
+		System.out.println("\n15");
+		System.out.println(transactions.stream().sorted((t1, t2) -> t1.getValue()-t2.getValue()).findFirst().get());
 		
 		
 	}
