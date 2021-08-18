@@ -1,5 +1,9 @@
-package spring.core.quest3;
+package spring.core.quest4;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class BankAccountController {
 	
 	BankAccountService bankServ;
@@ -7,7 +11,8 @@ public class BankAccountController {
 	public BankAccountService getBankServ() {
 		return bankServ;
 	}
-
+	
+	@Autowired
 	public void setBankServ(BankAccountService bankServ) {
 		this.bankServ = bankServ;
 	}

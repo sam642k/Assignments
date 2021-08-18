@@ -1,4 +1,4 @@
-package spring.core.quest3;
+package spring.core.quest4;
 
 public class BankAccount {
 	long accountId;
@@ -6,6 +6,15 @@ public class BankAccount {
 	String accountType;
 	double accountBalance;
 	
+	public BankAccount() {}
+	
+	public BankAccount(long accountId, String accountHolderName, String accountType, double accountBalance) {
+		super();
+		this.accountId = accountId;
+		this.accountHolderName = accountHolderName;
+		this.accountType = accountType;
+		this.accountBalance = accountBalance;
+	}
 	public long getAccountId() {
 		return accountId;
 	}

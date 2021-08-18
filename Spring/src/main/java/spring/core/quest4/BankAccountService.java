@@ -1,6 +1,6 @@
-package spring.core.quest3;
+package spring.core.quest4;
 
-public interface BankAccountSevice {
+public interface BankAccountService {
 	public double withdraw(long accountId, double balance);
 	public double deposit(long accountId, double balance);
 	public double getBalance(long accountId);

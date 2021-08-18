@@ -1,6 +1,9 @@
-package spring.core.quest3;
+package spring.core.quest4;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class BankAccountRepositoryImpl implements BankAccountRepository {
 	
 	BankAccount account1;
@@ -12,7 +15,8 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
 	public BankAccount getAccount1() {
 		return account1;
 	}
-
+	
+	@Autowired
 	public void setAccount1(BankAccount account1) {
 		this.account1 = account1;
 	}
@@ -20,7 +24,8 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
 	public BankAccount getAccount2() {
 		return account2;
 	}
-
+	
+	@Autowired
 	public void setAccount2(BankAccount account2) {
 		this.account2 = account2;
 	}
@@ -28,7 +33,8 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
 	public BankAccount getAccount3() {
 		return account3;
 	}
-
+	
+	@Autowired
 	public void setAccount3(BankAccount account3) {
 		this.account3 = account3;
 	}
