@@ -1,3 +1,5 @@
 # Assignments
 
-The Spring folder conains all the assignments from Spring-Core.
+The folder 'Spring' conains all the assignments from Spring-Core.
+The folder 'SpringMVC' contains all the assignment of MVC and first 4 questions of REST assignment.
+The folder 'RestSecurity' contains the assignments from 5th of REST and all Security Assignments.
