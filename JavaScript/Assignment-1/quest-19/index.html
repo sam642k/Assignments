@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="form">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="exp" name="exp">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="clear" value="C" onclick="form.exp.value=''"></td>
+                    <td><input type="button" id="left-par" value="(" onclick="form.exp.value+='('"></td>
+                    <td><input type="button" id="right-par" value=")" onclick="form.exp.value+=')'"></td>
+                    <td><input type="button" id="mod" value="%" onclick="form.exp.value+='%'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="seven" value="7" onclick="form.exp.value+='7'"></td>
+                    <td><input type="button" id="eight" value="8" onclick="form.exp.value+='8'"></td>
+                    <td><input type="button" id="nine" value="9" onclick="form.exp.value+='9'"></td>
+                    <td><input type="button" id="div" value="/" onclick="form.exp.value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="four" value="4" onclick="form.exp.value+='4'"></td>
+                    <td><input type="button" id="five" value="5" onclick="form.exp.value+='5'"></td>
+                    <td><input type="button" id="six" value="6" onclick="form.exp.value+='6'"></td>
+                    <td><input type="button" id="mul" value="x" onclick="form.exp.value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="one" value="1" onclick="form.exp.value+='1'"></td>
+                    <td><input type="button" id="two" value="2" onclick="form.exp.value+='2'"></td>
+                    <td><input type="button" id="three" value="3" onclick="form.exp.value+='3'"></td>
+                    <td><input type="button" id="sub" value="-" onclick="form.exp.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="one" value="<-" onclick="form.exp.value=form.exp.value.slice(0,-1)"></td>
+                    <td><input type="button" id="two" value="0" onclick="form.exp.value+='0'"></td>
+                    <td><input type="button" id="three" value="=" onclick="form.exp.value=eval(form.exp.value)"></td>
+                    <td><input type="button" id="add" value="+" onclick="form.exp.value+='+'"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

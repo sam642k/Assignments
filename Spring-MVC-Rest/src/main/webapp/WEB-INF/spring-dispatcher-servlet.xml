@@ -32,6 +32,27 @@
     	</property>
     </bean> 
     
+    <bean id="account1" class="mvc.quest12.BankAccount">
+    	<property name="accountId" value="125"/>
+    	<property name="accountHolderName" value="Tony"/>
+    	<property name="accountType" value="Savings"/>
+    	<property name="accountBalance" value="1697000"/>
+    </bean>
+    
+    <bean id="account2" class="mvc.quest12.BankAccount">
+    	<property name="accountId" value="450"/>
+    	<property name="accountHolderName" value="Steve"/>
+    	<property name="accountType" value="Current"/>
+    	<property name="accountBalance" value="8500000"/>
+    </bean>
+    
+    <bean id="account3" class="mvc.quest12.BankAccount">
+    	<property name="accountId" value="965"/>
+    	<property name="accountHolderName" value="Thor"/>
+    	<property name="accountType" value="Savings"/>
+    	<property name="accountBalance" value="7882000"/>
+    </bean>
+    
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
     	<property name="basename" value="/WEB-INF/messages"/>
     </bean>

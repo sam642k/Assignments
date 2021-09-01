@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+.first{
+    background: url("bg1.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 750px;
+    background-position: center;
+    text-align: center;
+}
+
+.first .title{
+    font-size: 24px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 40%;
+    color: yellow;
+    letter-spacing: 3px;
+}
+
+.caption1{
+    font-size: 36px;
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.second{
+    background: url("bg2.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 750px;
+    background-position: center;
+    text-align: center;
+}
+
+.third{
+    background: url("bg3.jpg") no-repeat fixed;
+    background-size: cover;
+    min-height: 750px;
+    background-position: center;
+    text-align: center;
+}
+
+.third .title{
+    font-size: 20px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 35%;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 30%;
+    color: yellow;
+    letter-spacing: 3px;
+}

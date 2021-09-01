@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(166, 213, 224);
+}
+
+.photo{
+    text-align: center;
+    line-height: 1.1em;
+}
+
+h1 span{
+    line-height: 1em;
+    font-size: 0.6em;
+}
+
+.intro{
+    font-size: large;
+    padding: 0px 200px;
+}
+
+ul{
+    font-size: larger;
+    line-height: 2.5em;
+    padding: 0px 120px;
+    list-style-position: inside;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}

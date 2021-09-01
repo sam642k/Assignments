@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="msg"></div>
+        <form name="myform">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"><br><br><br>
+            <strong>Toppings: </strong><br><br>
+            <label for="cheese">Extra Cheese </label><input type="checkbox" id="cheese" value="Cheese">
+            <label for="pepporoni">Pepporoni </label><input type="checkbox" id="pepporoni" value="pepporoni">
+            <label for="olives">Olives </label><input type="checkbox" id="olives" value="olives">
+            <label for="pepper">Pepper </label><input type="checkbox" id="pepper" value="pepper">
+            <label for="bacon">Bacon </label><input type="checkbox" id="bacon" value="bacon">
+            <label for="tomatos">Tomatos </label><input type="checkbox" id="tomatos" value="tomatos">
+            <label for="mush">Mushrooms </label><input type="checkbox" id="mush" value="mushrooms">
+            <br><br><br>
+            <strong>How do you want to get your pizza!</strong><br>
+            <label for="delivery">Delivery </label><input type="radio" name="type" id="delivery" value="delivery" checked>
+            <label for="pickup">Pick Up </label><input type="radio" name="type" id="pickup" value="pickup">
+            <br><br><br>
+            <strong>Tip?</strong>
+            <select>
+                <option>0</option>
+                <option>15%</option>
+                <option>20%</option>
+                <option>25%</option>
+            </select>
+            <br><br>
+            Address<br><textarea rows="10" cols="50" id="address" name="address"></textarea><br><br>
+            <input type="submit">
+            <input type="button" value="Clear All">
+            <input type="button" value="Show Summary" id ="summary" disabled>
+        </form>
+        <script src="test.js"></script>
+    </body>
+</html>
