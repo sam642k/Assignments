@@ -1,0 +1,57 @@
+<div class="container col-4">
+    <h1>Advertisement Form</h1>
+    <form [formGroup]="advForm">
+        <div class="form-group">
+            <label>Title</label>
+            <input [class.is-invalid]="advForm.controls.title.invalid && advForm.controls.title.touched" formControlName="title" type="text" class="form-control" name="title">
+            <div *ngIf="advForm.controls.title.invalid && advForm.controls.title.touched">
+                <small *ngIf="advForm.get('title')!.errors?.required" class="text-danger">Title cannot be empty</small>
+                <small *ngIf="advForm.get('title')!.errors?.minlength" class="text-danger">Title must be atleast 3 letters long</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input [class.is-invalid]="advForm.controls.name.invalid && advForm.controls.name.touched" formControlName="name" type="text" class="form-control" name="name">
+            <small *ngIf="advForm.controls.name.invalid && advForm.controls.name.touched" class="text-danger">Name cannot be empty</small>
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <select [class.is-invalid]="advForm.controls.category.invalid && advForm.controls.category.touched" formControlName="category" class="form-control" name="category">
+                <option selected value="">Select Category</option>
+                <option *ngFor="let cat of categories">{{cat}}</option>
+            </select>
+            <small *ngIf="advForm.controls.category.invalid && advForm.controls.category.touched" class="text-danger">Please select a category</small>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea formControlName="description" class="form-control" name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <button mat-raised-button type="submit" (click)=addNewAdv()>Submit</button>
+        </div>
+    </form>
+</div>
+
+<div class="container col-8" *ngIf="isSubmitted">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let adv of advs">
+                <td>{{adv.id}}</td>
+                <td>{{adv.title}}</td>
+                <td>{{adv.name}}</td>
+                <td>{{adv.category}}</td>
+                <td>{{adv.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-warning" routerLink='/advertisements'>View All</button>
+</div>

@@ -1,0 +1,30 @@
+<div class="container col-4">
+    <hr>
+    <h2>Edit Advertisement</h2>
+    <hr>
+    <form #advForm="ngForm">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" name="title" [(ngModel)]="title">
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <select class="form-control" name="category" [(ngModel)]="category">
+                <option value="">Select Category</option>
+                <option *ngFor="let cat of categories">{{cat}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" name="description" [(ngModel)]="description"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success" type="submit" (click)="update()">Update</button>
+            <button class="btn btn-info" routerLink='/advertisements'>Cancel</button>
+        </div>
+    </form>
+</div>

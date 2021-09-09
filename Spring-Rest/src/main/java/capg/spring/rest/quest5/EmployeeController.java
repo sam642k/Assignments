@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class EmployeeController {
 	@Autowired
@@ -32,6 +33,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/rest/employee")
 	public List<Employee> getAll(){
+		System.out.println(empServ.getAll());
 		return empServ.getAll();
 	}
 	

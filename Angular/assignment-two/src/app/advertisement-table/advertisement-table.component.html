@@ -1,0 +1,34 @@
+<div class="container col-8">
+    <hr>
+    <h1>Advertisements</h1>
+    <hr>
+    <input #filter type="text" id="search" placeholder="Search.."><br><br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Title</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let adv of advs | search:filter.value">
+                <td>{{adv.id}}</td>
+                <td>{{adv.title}}</td>
+                <td>{{adv.name}}</td>
+                <td>{{adv.category}}</td>
+                <td>{{adv.description}}</td>
+                <td>
+                    <button mat-fab color="primary" (click)="edit(adv.id)"><mat-icon>edit</mat-icon></button>
+                    <button mat-fab color="warn" (click)="delete(adv.id)"><mat-icon>delete</mat-icon></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button class="btn btn-primary" routerLink='/advertisement-form'>Add new</button>
+</div>

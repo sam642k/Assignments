@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <th></th>
+        <th>Item</th>
+        <th>Price</th>
+        <th></th>
+        <th *ngIf="isUser">Total</th>
+    </tr>
+    <tr *ngFor="let item of selectedMenu">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }}</td>
+        <td *ngIf="isAdmin"><button>edit</button></td>
+        <td *ngIf="isAdmin"><button>delete</button></td>
+        <td *ngIf="isUser" (click)="add(item)"><button>add</button></td>
+        <td *ngIf="isUser && item.count>0">{{item.count}}</td>
+    </tr>
+</table>
+<button *ngIf="isUser" (click)="submit()">Submit</button>
+<button *ngIf="isAdmin">add</button>
+<h1 *ngIf="sub">Order Recieved</h1>
+
+
+
