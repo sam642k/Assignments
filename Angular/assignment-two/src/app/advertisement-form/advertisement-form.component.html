@@ -27,7 +27,7 @@
             <textarea formControlName="description" class="form-control" name="description"></textarea>
         </div>
         <div class="form-group">
-            <button mat-raised-button type="submit" (click)=addNewAdv()>Submit</button>
+            <button [disabled]="!advForm.valid" class="btn btn-dark" type="submit" (click)=addNewAdv()>Submit</button>
         </div>
     </form>
 </div>
