@@ -1,0 +1,22 @@
+1. > docker pull nginx
+
+2. > docker images
+
+3. Image id: ad4c705f24d3
+
+4. > docker run nginx
+
+5. > docker ps
+
+6. > docker ps -a
+
+7. Container id: be4103615b7d
+
+8. >docker inspect nginx
+	total layers: 5
+
+9. > docker pull tomcat:7.0
+
+10. > docker run tomcat:7.0
+
+11. >
